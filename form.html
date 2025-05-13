@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran BelajarBahasa</title>
+    <link rel="stylesheet" href="contact.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script>
+      function kirimForm() {
+        alert("Pesan Anda terkirim. Terima kasih telah mendaftar!");
+      }
+    </script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#" class="logo">BelajarBahasa</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </header>
+
+    <section class="form-section">
+      <h1>Form Pendaftaran BelajarBahasa</h1>
+      <div class="container">
+        <form onsubmit="kirimForm(); return false;">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="minat">Minat Belajar</label>
+          <select id="minat" name="minat">
+            <option value="inggris">Bahasa Inggris</option>
+            <option value="jepang">Bahasa Jepang</option>
+            <option value="mandarin">Bahasa Mandarin</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Aplikasi BelajarBahasa. All rights reserved.</footer>
+  </body>
+</html>
+
+<link rel="stylesheet" href="features.css" />
+<link rel="stylesheet" href="style.css" />
